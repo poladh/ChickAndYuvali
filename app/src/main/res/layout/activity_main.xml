@@ -14,21 +14,48 @@
         android:id="@android:id/tabcontent"
         >
         <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:id="@+id/tab1"
             android:orientation="vertical"
-            android:paddingTop="60px"
-            >
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/subLayout1"
-                android:orientation="vertical"
-                android:paddingTop="60px"
-                >
+            android:weightSum="1"
+            android:paddingTop="60dp">
 
-            </LinearLayout>
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:id="@+id/scrollView"
+                android:layout_weight="1.00"
+                android:visibility="visible"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical"
+                    android:scrollbarAlwaysDrawVerticalTrack="true"
+                    android:background="@drawable/symphony">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/welcomeTextView"
+                        android:id="@+id/welcomeTextView"
+                        android:layout_weight="0.10" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/about"
+                        android:id="@+id/aboutTextView"
+                        android:editable="false"
+                        android:layout_weight="1.20" />
+
+                </LinearLayout>
+            </ScrollView>
 
         </LinearLayout>
 
@@ -44,19 +71,17 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/subLayout2"
                 android:orientation="vertical"
-                android:paddingTop="60px"
-                >
+                android:paddingTop="60px">
                 <LinearLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/subLayout22"
                     android:orientation="vertical"
-                    android:paddingTop="60px"
-                    >
+                    android:paddingTop="60px">
                     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@android:color/background_dark"
+                        android:background="@drawable/symphony"
                         android:orientation="vertical" >
                         <ImageView
                             android:id="@+id/selected"
@@ -146,26 +171,90 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:id="@+id/tab3"
             android:orientation="vertical"
-            android:paddingTop="60px"
+            android:paddingTop="60dp"
             >
-            <LinearLayout
+            <ScrollView
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/subLayout3"
-                android:orientation="vertical"
-                android:paddingTop="60px"
-                >
-                <TextView
-                    android:layout_width="fill_parent"
-                    android:layout_height="100px"
-                    android:text="This is tab 3"
-                    android:id="@+id/txt3"
-                    />
-            </LinearLayout>
+                android:layout_height="0dp"
+                android:id="@+id/scrollViewTab3"
+                android:layout_weight="1.00"
+                android:visibility="visible"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical"
+                    android:scrollbarAlwaysDrawVerticalTrack="true"
+                    android:background="@drawable/symphony"
+                    android:baselineAligned="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/contactInfo"
+                        android:id="@+id/contactInfo"
+                        android:layout_weight="0.30" />
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/businessHours"
+                        android:id="@+id/BusinessHours"
+                        android:layout_weight="0.30" />
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/feelFree"
+                        android:id="@+id/feelFree" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:text="Name"
+                        android:ems="10"
+                        android:id="@+id/nameText" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:ems="10"
+                        android:id="@+id/emailText"
+                        android:text="Email" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/subjectText"
+                        android:text="Subject" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/messageText"
+                        android:text="Message" />
+
+                </LinearLayout>
+            </ScrollView>
         </LinearLayout>
     </FrameLayout>
 
