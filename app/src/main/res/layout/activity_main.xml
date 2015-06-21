@@ -49,8 +49,23 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:text="@string/about"
-                        android:id="@+id/aboutTextView"
+                        android:text="@string/about1"
+                        android:id="@+id/about1TextView"
+                        android:editable="false"
+                        android:layout_weight="1.20" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView"
+                        android:src="@drawable/pic1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/about2"
+                        android:id="@+id/about2TextView"
                         android:editable="false"
                         android:layout_weight="1.20" />
 
@@ -252,6 +267,13 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/messageText"
                         android:text="Message" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Send"
+                        android:id="@+id/sendButton"
+                        android:hint="Send" />
 
                 </LinearLayout>
             </ScrollView>

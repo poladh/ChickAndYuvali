@@ -3,13 +3,8 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="about">Chick and Yuvali\'s petting zoo was established in order to provide home for the animals of the street of Be\'er Sheba. Along the time, the petting zoo started to receive applies from more and more animals who wanted to stay at our petting zoo. Since then our petting zoo became the home for many animals and they all love to be here, and also love people very much, they just waitung for visitors.
-
-Chic (AKA Hadar) is an urban girl, born and raised in Be\'er Sheba, she always loved animals, baboons especialy, and always wanted to have a place just for animals.
-
-Yuvali (AKA Bivan) is a rural country boy, born and raised in Maccabim, recently migrated to the big city of Be\'er Sheba. Yuval always loved petting and wanted to have a place just for that.
-
-Their dreams became reality when they met each other and established "Chic and Yuvali petting zoo" where they can also have animals and pet them whole.</string>
+    <string name="about1">Chick and Yuvali\'s petting zoo was established in order to provide home for the animals of the street of Be\'er Sheba. Along the time, the petting zoo started to receive applies from more and more animals who wanted to stay at our petting zoo. Since then our petting zoo became the home for many animals and they all love to be here, and also love people very much, they just waitung for visitors.\nChic (AKA Hadar) is an urban girl, born and raised in Be\'er Sheba, she always loved animals, baboons especialy, and always wanted to have a place just for animals.</string>
+    <string name="about2">Yuvali (AKA Bivan) is a rural country boy, born and raised in Maccabim, recently migrated to the big city of Be\'er Sheba. Yuval always loved petting and wanted to have a place just for that.\nTheir dreams became reality when they met each other and established "Chic and Yuvali petting zoo" where they can also have animals and pet them whole.</string>
     <string name="welcomeTextView">Welcome to Chick &amp; Yuvali petting zoo</string>
     <string name="businessHours">Business hours:\nSun - Thu: 8am - 6pm\nFriday: 8am - 12pm\nSaturady: 12pm - 6pm</string>
     <string name="contactInfo">Contact information:\nZoltovski Garden, Ben-Gurion University\nBe\'er Sheba, Israel 84810\nTel: +972-8-987-6543\nchickAndYuvali@ch&amp;yu.com</string>
